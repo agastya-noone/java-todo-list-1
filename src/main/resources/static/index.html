@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My To-Do List</h1>
+        <p class="subtitle">Organize your day, one task at a time.</p>
+
+        <div class="input-section">
+
+            <input type="text" id="taskInput"
+                placeholder="Enter a new task...">
+
+            <input type="date" id="deadlineInput"
+                title="Select deadline">
+
+            <button onclick="addTask()">Add Task</button>
+
+        </div>
+
+        <div class="statistics">
+
+            <div class="stat">
+                <h2 id="totalTasks">0</h2>
+                <p>Total</p>
+            </div>
+
+            <div class="stat">
+                <h2 id="completedTasks">0</h2>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat">
+                <h2 id="pendingTasks">0</h2>
+                <p>Pending</p>
+            </div>
+
+        </div>
+
+        <h2 class="list-heading">Your Tasks</h2>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
